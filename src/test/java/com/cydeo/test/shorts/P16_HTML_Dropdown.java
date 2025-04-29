@@ -8,6 +8,7 @@ import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
+
 public class P16_HTML_Dropdown {
 
     WebDriver driver;
@@ -22,7 +23,9 @@ public class P16_HTML_Dropdown {
       @Test
     public void htmlDropdownTest(){
            driver.get("https://practice.cydeo.com/dropdown");
+
            driver.findElement(By.id("dropdownMenuLink")).click();
+
            driver.findElement(By.linkText("Yahoo")).click();
 
     }
