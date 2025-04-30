@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 
@@ -15,7 +16,7 @@ public class P16_HTML_Dropdown {
 
     @BeforeMethod
     public void setUpMethod(){
-        WebDriver driver = WebDriverFactory.getDriver("chrome");
+         driver = WebDriverFactory.getDriver("chrome");
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
