@@ -1,5 +1,6 @@
 package com.cydeo.test.shorts;
 
+import com.cydeo.test.utilites.BrowserUtils;
 import com.cydeo.test.utilites.WebDriverFactory;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
@@ -22,9 +23,12 @@ public class P14_CheckBox {
         System.out.println("Box1.isSelected() = " + checkBox1.isSelected());
 
         checkBox1.click();
+        BrowserUtils.sleep(4);
+
         System.out.println("After click Box1.isSelected() = " + checkBox1.isSelected());
 
         System.out.println("checkBox1 is enable = " + checkBox1.isEnabled());
+
 
     }
 
